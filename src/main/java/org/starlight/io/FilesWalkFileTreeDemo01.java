@@ -1,4 +1,4 @@
-package org.starlight;
+package org.starlight.io;
 
 import java.io.IOException;
 import java.nio.file.*;

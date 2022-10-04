@@ -1,4 +1,4 @@
-package org.starlight;
+package org.starlight.io;
 
 import java.io.FileInputStream;
 import java.nio.ByteBuffer;

@@ -1,4 +1,4 @@
-package org.starlight;
+package org.starlight.io;
 
 import static org.starlight.util.ByteBufferPrinter.debugAll;
 

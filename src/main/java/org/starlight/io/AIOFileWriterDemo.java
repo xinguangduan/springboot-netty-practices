@@ -1,4 +1,4 @@
-package org.starlight;
+package org.starlight.io;
 
 import static org.starlight.util.ByteBufferPrinter.debugAll;
 
@@ -12,11 +12,12 @@ import java.nio.file.StandardOpenOption;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class AIOFileReaderDemo {
-    static final String rootPath = "";
+public class AIOFileWriterDemo {
+    static final String rootPath = "/";
 
     public static void main(String[] args) throws IOException {
-        try (AsynchronousFileChannel channel = AsynchronousFileChannel.open(Paths.get(rootPath + "data.txt"), StandardOpenOption.READ)) {
+
+        try (AsynchronousFileChannel channel = AsynchronousFileChannel.open(Paths.get(rootPath + "datawrite.txt"), StandardOpenOption.READ)) {
             ByteBuffer buffer = ByteBuffer.allocate(16);
             log.info("read start...");
             channel.read(buffer, 0, buffer, new CompletionHandler<>() {
